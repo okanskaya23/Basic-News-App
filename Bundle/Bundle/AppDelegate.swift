@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Bundle
 //
-//  Created by Okan Sarp Kaya on 11.04.2021.
+//  Created by Okan Sarp Kaya on 28.04.2021.
 //
 
 import UIKit
@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.

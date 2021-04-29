@@ -1,37 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "A9CCC39F-3B70-4C81-B5DC-378BE2A0676D"
+   uuid = "A1557602-450B-4990-980A-D5AF2EB011E6"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "36569B1E-CE87-4057-B832-166875057A3C"
+            uuid = "A5CCFD03-DB6F-4781-A85E-45024D9C9A06"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Bundle/ViewController.swift"
+            filePath = "Bundle/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4AD417E1-109F-42A0-9A5D-0045F1AF34EC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bundle/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "8"
-            endingLineNumber = "8"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
             landmarkName = "unknown"
             landmarkType = "0">
          </BreakpointContent>
@@ -39,189 +23,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BFFDE8E5-B030-4126-B082-84A6CEFFB7E7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bundle/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "BFFDE8E5-B030-4126-B082-84A6CEFFB7E7 - b3f1e70a2934cd87"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bundle.ViewController.__deallocating_deinit"
-                  moduleName = "Bundle"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/okansarpkaya/Desktop/bundle%20staj/Bundle/Bundle/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "BFFDE8E5-B030-4126-B082-84A6CEFFB7E7 - d3fc24089a650bc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bundle.ViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Bundle.ViewController"
-                  moduleName = "Bundle"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/okansarpkaya/Desktop/bundle%20staj/Bundle/Bundle/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  uuid = "BFFDE8E5-B030-4126-B082-84A6CEFFB7E7 - 5b39e150266f3208"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bundle.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Bundle.ViewController"
-                  moduleName = "Bundle"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/okansarpkaya/Desktop/bundle%20staj/Bundle/Bundle/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "191">
-               </Location>
-               <Location
-                  uuid = "BFFDE8E5-B030-4126-B082-84A6CEFFB7E7 - eedb3a784389d48d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bundle.ViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Bundle.ViewController&gt;"
-                  moduleName = "Bundle"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/okansarpkaya/Desktop/bundle%20staj/Bundle/Bundle/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  uuid = "BFFDE8E5-B030-4126-B082-84A6CEFFB7E7 - 14b7ab1aaee96c16"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bundle.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Bundle.ViewController&gt;"
-                  moduleName = "Bundle"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/okansarpkaya/Desktop/bundle%20staj/Bundle/Bundle/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "146">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7C86CBB7-768B-40EB-9A9D-6F47D5F5A816"
+            uuid = "805DD799-E58F-4BFD-A87A-8A9B4D3DB5D3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Bundle/ViewController.swift"
+            filePath = "Bundle/Controller/CategoryController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "167A6BFB-7D7E-4300-B6ED-2B2ABB108BCF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bundle/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "loadData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DD4D2857-260A-41E6-AD00-5C251F079C1F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Bundle/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "DD4D2857-260A-41E6-AD00-5C251F079C1F - 24c4d853619bc499"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bundle.ViewController.apiUrl.getter : Swift.Optional&lt;Foundation.URL&gt;"
-                  moduleName = "Bundle"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/okansarpkaya/Desktop/bundle%20staj/Bundle/Bundle/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "40">
-               </Location>
-               <Location
-                  uuid = "DD4D2857-260A-41E6-AD00-5C251F079C1F - 5b39e150266f3229"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bundle.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Bundle.ViewController"
-                  moduleName = "Bundle"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/okansarpkaya/Desktop/bundle%20staj/Bundle/Bundle/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "185">
-               </Location>
-               <Location
-                  uuid = "DD4D2857-260A-41E6-AD00-5C251F079C1F - 14b7ab1aaee96c37"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Bundle.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Bundle.ViewController&gt;"
-                  moduleName = "Bundle"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/okansarpkaya/Desktop/bundle%20staj/Bundle/Bundle/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "142">
-               </Location>
-            </Locations>
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "category_&#x131;mgs"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
