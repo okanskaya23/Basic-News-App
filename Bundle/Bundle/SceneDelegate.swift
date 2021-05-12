@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Bundle
 //
-//  Created by Okan Sarp Kaya on 11.04.2021.
+//  Created by Okan Sarp Kaya on 28.04.2021.
 //
 
 import UIKit
