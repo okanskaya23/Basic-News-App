@@ -9,6 +9,21 @@ import Foundation
 import UIKit
 
 class CategoryController: UICollectionViewController, UISearchBarDelegate {
+    
+
+    enum Category: String, CaseIterable {
+        typealias RawValue = String;
+
+        case n1 = "Business";
+        case n2 = "Technology";
+        case n3 = "Entertainment";
+        case n4 = "General";
+        case n5 = "Health";
+        case n6 = "Science" ;
+        case n7 = "Sports";
+    }
+
+
     let category = ["Business", "Technology", "Entertainment", "General", "Health","Science", "Sports"]
     let category_ımgs: [UIImage] =
     [
@@ -26,10 +41,7 @@ class CategoryController: UICollectionViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         print("The view did load")
         super.viewDidLoad()
-        
-        DispatchQueue.main.async
-        {
-            
+        DispatchQueue.main.async{
             self.collectionView.reloadData()
         }
         collectionView.register(UINib(nibName: "CategoryCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCell");

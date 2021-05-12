@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import SafariServices
 
+
+
 class NewsPageController: UICollectionViewController, SFSafariViewControllerDelegate {
 
     
@@ -18,19 +20,7 @@ class NewsPageController: UICollectionViewController, SFSafariViewControllerDele
     //public var newsURL =  "https://newsapi.org/v2/everything?q=tesla&from=2021-03-28&sortBy=publishedAt&apiKey=779c933cc31f45f29b8011cbf1670018"
     
 
-    
-    
-    @IBAction func proto(_ sender: Any) {
-        // create the alert
-        let alert = UIAlertController(title: "My Title", message: "This is my message.", preferredStyle: UIAlertController.Style.alert)
 
-        // add an action (button)
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-
-        // show the alert
-        self.present(alert, animated: true, completion: nil)
-    
-    }
     
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -42,14 +32,14 @@ class NewsPageController: UICollectionViewController, SFSafariViewControllerDele
     
     private func load(){
         var isdone = false
-        loaddata().getArticles(for: newsURL) { articles, num in
+        loaddata().getArticles(for: newsURL) { [weak self] articles,  num in
             if let articles = articles{
                 isdone = true
-                self.LocalModel = NewBundle(articles, count: num)
+                self?.LocalModel = NewBundle(articles, count: num)
             }
             DispatchQueue.main.async{
                 if isdone{
-                    self.collectionView.reloadData()
+                    self?.collectionView.reloadData()
                 }
             }
         }
@@ -78,7 +68,6 @@ class NewsPageController: UICollectionViewController, SFSafariViewControllerDele
     }
     
     
-
 
     
     

@@ -13,10 +13,7 @@ import Foundation
 class NewBundle {
     private var newitems: [New] = []
     private var Count: Int = 0
-}
-
-
-extension NewBundle {
+    
     convenience init(_ newArticles: [New], count: Int) {
         self.init()
         newitems.append(contentsOf: newArticles)
@@ -48,23 +45,17 @@ extension NewBundle {
     func totalNoOfArticles() -> Int {
         return self.Count
     }
-    
-    
 }
+
+
+
 
 
 struct News {
     private let newitem: New
-}
-
-
-extension News {
     init(_ newitem: New) {
         self.newitem = newitem
     }
-}
-//hepsini aynı yere
-extension News {
     var title: String {
         return newitem.title
     }
@@ -75,3 +66,6 @@ extension News {
         return newitem.url
     }
 }
+
+
+

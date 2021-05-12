@@ -46,3 +46,22 @@ class BadMsg: Msg {
     
     
 }
+//protocol Serializer {
+//
+//    func serialize(data: AnyObject) -> NSData?
+//
+//}
+//
+//class RequestSerializer: Serializer {
+//
+//    func serialize(data: AnyObject) -> NSData? {
+//        ...
+//    }
+//
+//}
+//
+//class DataManager {
+//
+//    var serializer: Serializer? = RequestSerializer()
+//
+//}
