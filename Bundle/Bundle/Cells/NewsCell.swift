@@ -7,24 +7,26 @@
 
 import UIKit
 
-class NewsCell: UICollectionViewCell {
+class NewsCell: UICollectionViewCell{
 
-    @IBOutlet weak var NewsTittle: UILabel!
+    @IBOutlet weak private var NewsTittle: UILabel!
     func setTittle(with NewsTittleVar: String){
         NewsTittle.text = NewsTittleVar;
-        
     }
-    @IBOutlet weak var NewsDescription: UILabel!
+    
+    
+    @IBOutlet weak private var NewsDescription: UILabel!
     func setSubTittle(with NewsSubTittleVar: String){
         NewsDescription.text = NewsSubTittleVar;
-        
     }
-    @IBOutlet weak var NewsImg: UIImageView!
+    
+    @IBOutlet weak private var NewsImg: UIImageView!
     func setImg(with ImgVar: URL){
         NewsImg.load(url: ImgVar)
-        
     }
-    override func awakeFromNib() {
+    
+    
+    override func awakeFromNib(){
         super.awakeFromNib()
         // Initialization code
     }

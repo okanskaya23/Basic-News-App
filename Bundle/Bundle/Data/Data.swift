@@ -9,8 +9,8 @@
 import Foundation
 
 
-class loaddata {
-    func getArticles(for urlString: String, completion: @escaping ([New]?, Int) -> ()) {
+class loaddata{
+    func getArticles(for urlString: String, completion: @escaping ([New]?, Int) -> ()){
 
         let correct = urlString.replacingOccurrences(of: " " , with: "-").lowercased()
         let newsURL = "https://newsapi.org/v2/top-headlines?"+correct+"&country=tr&page=1&apiKey=779c933cc31f45f29b8011cbf1670018"

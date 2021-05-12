@@ -34,22 +34,36 @@ class CategoryController: UICollectionViewController, UISearchBarDelegate {
         }
         collectionView.register(UINib(nibName: "CategoryCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCell");
     }
+    
+    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         performSegue(withIdentifier: "category_to_list", sender: "category="+category[indexPath.row])
     }
+    
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         return self.category.count
     }
+    
+    
     override func numberOfSections(in collectionView: UICollectionView) -> Int
     {
             return 1;
     }
+    
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as? CategoryCell else{fatalError("????")}
+        guard
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as? CategoryCell
+        else
+        {
+            fatalError("????")
+        }
         cell.setTittle(with: category[indexPath.row])
-        cell.ımage_c.image = category_ımgs[indexPath.row]
+        cell.setImg(with: category_ımgs[indexPath.row])
+        //cell.ımage_c.image = category_ımgs[indexPath.row]
         return cell
     }
 

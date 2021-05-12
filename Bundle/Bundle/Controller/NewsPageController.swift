@@ -11,34 +11,61 @@ import UIKit
 import SafariServices
 
 class NewsPageController: UICollectionViewController, SFSafariViewControllerDelegate {
+
+    
     private var LocalModel: NewBundle!
     public var newsURL = "https://newsapi.org/v2/top-headlines?country=eng&apiKey=779c933cc31f45f29b8011cbf1670018"
     //public var newsURL =  "https://newsapi.org/v2/everything?q=tesla&from=2021-03-28&sortBy=publishedAt&apiKey=779c933cc31f45f29b8011cbf1670018"
-    override func viewDidLoad() {
+    
+
+    
+    
+    @IBAction func proto(_ sender: Any) {
+        // create the alert
+        let alert = UIAlertController(title: "My Title", message: "This is my message.", preferredStyle: UIAlertController.Style.alert)
+
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    
+    }
+    
+    override func viewDidLoad(){
         super.viewDidLoad()
+        //navigationController?.popViewController(animated: true)
         load()
         collectionView.register(UINib(nibName: "NewsCell", bundle: nil), forCellWithReuseIdentifier: "NewsCell");
     }
-    private func load() {
+    
+    
+    private func load(){
         var isdone = false
         loaddata().getArticles(for: newsURL) { articles, num in
-            if let articles = articles {
+            if let articles = articles{
                 isdone = true
                 self.LocalModel = NewBundle(articles, count: num)
             }
-            DispatchQueue.main.async {
-                if isdone {
+            DispatchQueue.main.async{
+                if isdone{
                     self.collectionView.reloadData()
-                } 
+                }
             }
         }
     }
+    
+    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return self.LocalModel == nil ? 0: self.LocalModel.noOfSections
     }
+    
+    
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.LocalModel.newnum(section)
     }
+    
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewsCell", for: indexPath) as! NewsCell
         let articleAtCell = self.LocalModel.articleAtIndex(indexPath.row)
@@ -49,18 +76,28 @@ class NewsPageController: UICollectionViewController, SFSafariViewControllerDele
         
         return cell
     }
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        AlertPresentable.presentAlert
+    }
 
+    
+    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let articleAtCell = self.LocalModel.articleAtIndex(indexPath.row)
         let urlString = articleAtCell.articleURL
-        if let url = URL(string: urlString)
-        {
-            let open = SFSafariViewController.Configuration()
-            open.entersReaderIfAvailable = true
-            let articleWebView = SFSafariViewController(url: url, configuration: open)
+        if let url = URL(string: urlString) {
+            let sfConfiguration = SFSafariViewController.Configuration()
+            sfConfiguration.entersReaderIfAvailable = true
+            let articleWebView = SFSafariViewController(url: url, configuration: sfConfiguration)
             articleWebView.delegate = self
+            present(articleWebView, animated: true)
         }
     }
+    
+    
 
 }
 
