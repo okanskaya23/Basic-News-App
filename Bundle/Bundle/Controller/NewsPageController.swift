@@ -78,10 +78,7 @@ class NewsPageController: UICollectionViewController, SFSafariViewControllerDele
     }
     
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        AlertPresentable.presentAlert
-    }
+
 
     
     
