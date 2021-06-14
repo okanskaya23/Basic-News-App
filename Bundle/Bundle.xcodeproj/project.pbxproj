@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BE89C481263A84F100CE0CFA /* mockdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE89C480263A84F100CE0CFA /* mockdata.swift */; };
-		BE89C484263AAB9F00CE0CFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE89C482263AAB9F00CE0CFA /* ViewController.swift */; };
-		BE89C485263AAB9F00CE0CFA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE89C483263AAB9F00CE0CFA /* ViewController.xib */; };
 		BE98473A2639566A000AE1A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9847392639566A000AE1A2 /* AppDelegate.swift */; };
 		BE98473C2639566A000AE1A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98473B2639566A000AE1A2 /* SceneDelegate.swift */; };
 		BE9847412639566A000AE1A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE98473F2639566A000AE1A2 /* Main.storyboard */; };
@@ -25,12 +23,14 @@
 		BE98476026395AAB000AE1A2 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE98475E26395AAB000AE1A2 /* CategoryCell.xib */; };
 		BE98476326395AC2000AE1A2 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE98476126395AC2000AE1A2 /* NewsCell.swift */; };
 		BE98476426395AC2000AE1A2 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE98476226395AC2000AE1A2 /* NewsCell.xib */; };
+		BEA071642677480B004CB82E /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA071622677480B004CB82E /* ProfileController.swift */; };
+		BEA071652677480B004CB82E /* ProfileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEA071632677480B004CB82E /* ProfileController.xib */; };
+		BEA0716826775D83004CB82E /* LocalDisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA0716626775D83004CB82E /* LocalDisplayController.swift */; };
+		BEA0716926775D83004CB82E /* LocalDisplayController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEA0716726775D83004CB82E /* LocalDisplayController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BE89C480263A84F100CE0CFA /* mockdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mockdata.swift; sourceTree = "<group>"; };
-		BE89C482263AAB9F00CE0CFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BE89C483263AAB9F00CE0CFA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		BE9847362639566A000AE1A2 /* Bundle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bundle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9847392639566A000AE1A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE98473B2639566A000AE1A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +48,10 @@
 		BE98475E26395AAB000AE1A2 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		BE98476126395AC2000AE1A2 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		BE98476226395AC2000AE1A2 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		BEA071622677480B004CB82E /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		BEA071632677480B004CB82E /* ProfileController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileController.xib; sourceTree = "<group>"; };
+		BEA0716626775D83004CB82E /* LocalDisplayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDisplayController.swift; sourceTree = "<group>"; };
+		BEA0716726775D83004CB82E /* LocalDisplayController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalDisplayController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,14 +84,15 @@
 		BE9847382639566A000AE1A2 /* Bundle */ = {
 			isa = PBXGroup;
 			children = (
+				BE9847532639581A000AE1A2 /* Data */,
+				BE9847422639566A000AE1A2 /* Assets.xcassets */,
+				BE9847472639566A000AE1A2 /* Info.plist */,
+				BE98476626395AF1000AE1A2 /* Cells */,
 				BE9847392639566A000AE1A2 /* AppDelegate.swift */,
 				BE98473B2639566A000AE1A2 /* SceneDelegate.swift */,
-				BE98476626395AF1000AE1A2 /* Cells */,
-				BE98476526395ACC000AE1A2 /* Stroryboards */,
-				BE9847472639566A000AE1A2 /* Info.plist */,
-				BE9847422639566A000AE1A2 /* Assets.xcassets */,
+				BE98476526395ACC000AE1A2 /* View */,
+				BEA0716A26777DDE004CB82E /* View model */,
 				BE984756263958C7000AE1A2 /* Controller */,
-				BE9847532639581A000AE1A2 /* Data */,
 				BE984751263957F0000AE1A2 /* Model */,
 			);
 			path = Bundle;
@@ -114,24 +119,26 @@
 		BE984756263958C7000AE1A2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BE9847572639591F000AE1A2 /* NewsPageController.swift */,
-				BE89C482263AAB9F00CE0CFA /* ViewController.swift */,
-				BE98475926395960000AE1A2 /* CategoryController.swift */,
+				BEA071622677480B004CB82E /* ProfileController.swift */,
 				BE98475B26395989000AE1A2 /* SafariView.swift */,
+				BEA0716626775D83004CB82E /* LocalDisplayController.swift */,
+				BE9847572639591F000AE1A2 /* NewsPageController.swift */,
+				BE98475926395960000AE1A2 /* CategoryController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		BE98476526395ACC000AE1A2 /* Stroryboards */ = {
+		BE98476526395ACC000AE1A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				BE9847442639566A000AE1A2 /* LaunchScreen.storyboard */,
 				BE98473F2639566A000AE1A2 /* Main.storyboard */,
-				BE89C483263AAB9F00CE0CFA /* ViewController.xib */,
 				BE98475E26395AAB000AE1A2 /* CategoryCell.xib */,
+				BEA0716726775D83004CB82E /* LocalDisplayController.xib */,
+				BEA071632677480B004CB82E /* ProfileController.xib */,
 				BE98476226395AC2000AE1A2 /* NewsCell.xib */,
 			);
-			path = Stroryboards;
+			path = View;
 			sourceTree = "<group>";
 		};
 		BE98476626395AF1000AE1A2 /* Cells */ = {
@@ -141,6 +148,13 @@
 				BE98476126395AC2000AE1A2 /* NewsCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		BEA0716A26777DDE004CB82E /* View model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,11 +214,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA0716926775D83004CB82E /* LocalDisplayController.xib in Resources */,
 				BE9847462639566A000AE1A2 /* LaunchScreen.storyboard in Resources */,
 				BE9847432639566A000AE1A2 /* Assets.xcassets in Resources */,
 				BE98476426395AC2000AE1A2 /* NewsCell.xib in Resources */,
 				BE9847412639566A000AE1A2 /* Main.storyboard in Resources */,
-				BE89C485263AAB9F00CE0CFA /* ViewController.xib in Resources */,
+				BEA071652677480B004CB82E /* ProfileController.xib in Resources */,
 				BE98476026395AAB000AE1A2 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,10 +236,11 @@
 				BE9847552639583A000AE1A2 /* Data.swift in Sources */,
 				BE98474E263956C3000AE1A2 /* Model.swift in Sources */,
 				BE98475F26395AAB000AE1A2 /* CategoryCell.swift in Sources */,
+				BEA071642677480B004CB82E /* ProfileController.swift in Sources */,
 				BE98473A2639566A000AE1A2 /* AppDelegate.swift in Sources */,
-				BE89C484263AAB9F00CE0CFA /* ViewController.swift in Sources */,
 				BE89C481263A84F100CE0CFA /* mockdata.swift in Sources */,
 				BE98473C2639566A000AE1A2 /* SceneDelegate.swift in Sources */,
+				BEA0716826775D83004CB82E /* LocalDisplayController.swift in Sources */,
 				BE98475A26395960000AE1A2 /* CategoryController.swift in Sources */,
 				BE984750263956E7000AE1A2 /* struct.swift in Sources */,
 				BE98476326395AC2000AE1A2 /* NewsCell.swift in Sources */,

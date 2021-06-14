@@ -55,4 +55,7 @@ extension News {
     var articleURL: String {
         return newitem.url
     }
+    var urlToImage: String{
+        return newitem.urlToImage
+    }
 }

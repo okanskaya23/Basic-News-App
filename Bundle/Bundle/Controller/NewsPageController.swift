@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import SafariServices
 
-class NewsPageController: UICollectionViewController, SFSafariViewControllerDelegate {
+class NewsPageController: UICollectionViewController,UIPageViewControllerDelegate {
     private var LocalModel: NewBundle!
     public var newsURL = "https://newsapi.org/v2/top-headlines?country=eng&apiKey=779c933cc31f45f29b8011cbf1670018"
     //public var newsURL =  "https://newsapi.org/v2/everything?q=tesla&from=2021-03-28&sortBy=publishedAt&apiKey=779c933cc31f45f29b8011cbf1670018"
@@ -43,24 +43,36 @@ class NewsPageController: UICollectionViewController, SFSafariViewControllerDele
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewsCell", for: indexPath) as! NewsCell
         let articleAtCell = self.LocalModel.articleAtIndex(indexPath.row)
 
-        cell.setImg(with: URL(string: articleAtCell.articleURL)!)
+        cell.setImg(with: URL(string: articleAtCell.urlToImage)!)
         cell.setTittle(with: articleAtCell.title)
         cell.setSubTittle(with: articleAtCell.description ?? "errror")
         
         return cell
     }
-
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let articleAtCell = self.LocalModel.articleAtIndex(indexPath.row)
-        let urlString = articleAtCell.articleURL
-        if let url = URL(string: urlString)
-        {
-            let open = SFSafariViewController.Configuration()
-            open.entersReaderIfAvailable = true
-            let articleWebView = SFSafariViewController(url: url, configuration: open)
-            articleWebView.delegate = self
+
+        
+        let dataToBeSent = self.LocalModel.articleAtIndex(indexPath.row)
+        performSegue(withIdentifier: "localPage", sender: dataToBeSent)
+            
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("segue object: \(String(describing: segue))")
+        print("sender: \(String(describing: sender))")
+        if let destinationVC = segue.destination as? localDisplay {
+            if let item = sender as? News  {
+                let imgurl = URL(string: item.urlToImage)!
+                destinationVC.ImgUrl = imgurl
+                destinationVC.tsi = item.title
+                destinationVC.ds = item.description!
+                destinationVC.NewUrl = item.articleURL
+                
+            }
         }
     }
+    
+
 
 }
 

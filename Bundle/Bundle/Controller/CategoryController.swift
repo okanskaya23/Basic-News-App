@@ -8,8 +8,11 @@
 import Foundation
 import UIKit
 
-class CategoryController: UICollectionViewController, UISearchBarDelegate {
+class CategoryController: UICollectionViewController, UISearchBarDelegate, MyDataSendingDelegate {
     let category = ["Business", "Technology", "Entertainment", "General", "Health","Science", "Sports"]
+
+    @IBOutlet weak var receivedDataLabel: UITextField!
+    
     let category_ımgs: [UIImage] =
     [
         UIImage(named: "business")!,
@@ -34,6 +37,9 @@ class CategoryController: UICollectionViewController, UISearchBarDelegate {
         }
         collectionView.register(UINib(nibName: "CategoryCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCell");
     }
+    func sendDataToFirstViewController(myData: String) {
+        self.receivedDataLabel.text = "Welcome " + myData
+    }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         performSegue(withIdentifier: "category_to_list", sender: "category="+category[indexPath.row])
     }
@@ -52,16 +58,25 @@ class CategoryController: UICollectionViewController, UISearchBarDelegate {
         cell.ımage_c.image = category_ımgs[indexPath.row]
         return cell
     }
+    
 
 }
 extension CategoryController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("segue object: \(String(describing: segue))")
-        print("sender: \(String(describing: sender))")
-        if let destinationVC = segue.destination as? NewsPageController {
-            if let item = sender as? String  {
-                destinationVC.newsURL = item
+        if segue.identifier == "protocolData" {
+            let secondVC: ProfileController = segue.destination as! ProfileController
+            secondVC.delegate = self
+        }
+        else{
+            print("segue object: \(String(describing: segue))")
+            print("sender: \(String(describing: sender))")
+            if let destinationVC = segue.destination as? NewsPageController {
+                if let item = sender as? String  {
+                    destinationVC.newsURL = item
+                }
             }
         }
     }
 }
+
+

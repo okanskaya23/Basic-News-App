@@ -16,13 +16,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="168" height="250"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y07-6k-hqI">
-                        <rect key="frame" x="0.0" y="0.0" width="168" height="114"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="114" id="eqA-GY-w2h"/>
-                            <constraint firstAttribute="width" constant="168" id="heO-pg-oeG"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tittle" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37S-Fx-OXs">
                         <rect key="frame" x="0.0" y="119" width="168" height="21"/>
                         <constraints>
@@ -50,6 +43,13 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y07-6k-hqI">
+                        <rect key="frame" x="0.0" y="0.0" width="168" height="111"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="168" id="6Ws-AN-PHq"/>
+                            <constraint firstAttribute="height" constant="111" id="SgC-W1-xxv"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -57,13 +57,17 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Y07-6k-hqI" secondAttribute="trailing" id="Azb-ON-2v6"/>
                 <constraint firstItem="37S-Fx-OXs" firstAttribute="top" secondItem="Y07-6k-hqI" secondAttribute="bottom" constant="5" id="Q6E-4F-G1R"/>
+                <constraint firstAttribute="trailing" secondItem="Y07-6k-hqI" secondAttribute="trailing" id="Ylx-W5-csR"/>
                 <constraint firstAttribute="bottom" secondItem="QTX-GE-uxL" secondAttribute="bottom" id="fGD-4N-NOc"/>
+                <constraint firstItem="Y07-6k-hqI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fZk-ea-Nfr"/>
+                <constraint firstItem="Y07-6k-hqI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="foB-R3-bzF"/>
                 <constraint firstAttribute="trailing" secondItem="QTX-GE-uxL" secondAttribute="trailing" id="hlZ-Ib-KbX"/>
                 <constraint firstItem="37S-Fx-OXs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mHt-Zk-C2k"/>
                 <constraint firstItem="Y07-6k-hqI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="n7o-Dm-kSf"/>
                 <constraint firstItem="QTX-GE-uxL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pk2-Zs-ABw"/>
                 <constraint firstItem="Y07-6k-hqI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rNV-hR-xwn"/>
                 <constraint firstAttribute="trailing" secondItem="37S-Fx-OXs" secondAttribute="trailing" id="rxc-KP-Y06"/>
+                <constraint firstItem="37S-Fx-OXs" firstAttribute="top" secondItem="Y07-6k-hqI" secondAttribute="bottom" constant="8" symbolic="YES" id="xbi-nP-BT8"/>
             </constraints>
             <connections>
                 <outlet property="NewsDescription" destination="QTX-GE-uxL" id="suJ-PW-9Fl"/>
