@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewsCell" id="gTV-IL-0wX" customClass="NewsCell" customModule="Bundle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="168" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="168" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tittle" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37S-Fx-OXs">
+                        <rect key="frame" x="0.0" y="119" width="168" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="168" id="Ft7-CX-0fK"/>
+                            <constraint firstAttribute="height" constant="21" id="Tzv-cI-TtA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="29" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTX-GE-uxL" userLabel="NewsDescription">
+                        <rect key="frame" x="0.0" y="151" width="168" height="99"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="168" id="88T-GW-YOk"/>
+                            <constraint firstAttribute="height" constant="99" id="P88-T7-UCH"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Description">
+                                <attributes>
+                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <font key="NSFont" size="13" name=".SFNS-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y07-6k-hqI">
+                        <rect key="frame" x="0.0" y="0.0" width="168" height="111"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="168" id="6Ws-AN-PHq"/>
+                            <constraint firstAttribute="height" constant="111" id="SgC-W1-xxv"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Y07-6k-hqI" secondAttribute="trailing" id="Azb-ON-2v6"/>
+                <constraint firstItem="37S-Fx-OXs" firstAttribute="top" secondItem="Y07-6k-hqI" secondAttribute="bottom" constant="5" id="Q6E-4F-G1R"/>
+                <constraint firstAttribute="trailing" secondItem="Y07-6k-hqI" secondAttribute="trailing" id="Ylx-W5-csR"/>
+                <constraint firstAttribute="bottom" secondItem="QTX-GE-uxL" secondAttribute="bottom" id="fGD-4N-NOc"/>
+                <constraint firstItem="Y07-6k-hqI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fZk-ea-Nfr"/>
+                <constraint firstItem="Y07-6k-hqI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="foB-R3-bzF"/>
+                <constraint firstAttribute="trailing" secondItem="QTX-GE-uxL" secondAttribute="trailing" id="hlZ-Ib-KbX"/>
+                <constraint firstItem="37S-Fx-OXs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mHt-Zk-C2k"/>
+                <constraint firstItem="Y07-6k-hqI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="n7o-Dm-kSf"/>
+                <constraint firstItem="QTX-GE-uxL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pk2-Zs-ABw"/>
+                <constraint firstItem="Y07-6k-hqI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rNV-hR-xwn"/>
+                <constraint firstAttribute="trailing" secondItem="37S-Fx-OXs" secondAttribute="trailing" id="rxc-KP-Y06"/>
+                <constraint firstItem="37S-Fx-OXs" firstAttribute="top" secondItem="Y07-6k-hqI" secondAttribute="bottom" constant="8" symbolic="YES" id="xbi-nP-BT8"/>
+            </constraints>
+            <connections>
+                <outlet property="NewsDescription" destination="QTX-GE-uxL" id="suJ-PW-9Fl"/>
+                <outlet property="NewsImg" destination="Y07-6k-hqI" id="gXc-pX-heE"/>
+                <outlet property="NewsTittle" destination="37S-Fx-OXs" id="kRe-Y5-NXZ"/>
+            </connections>
+            <point key="canvasLocation" x="-17.39130434782609" y="116.51785714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>
